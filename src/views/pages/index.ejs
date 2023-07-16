@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head') %>
+  </head>
+  <body class="container">
+    <main>
+      <div class="jumbotron">
+        <h1>Doyed Mobile Application</h1>
+        <p>Simplified API overview</p>
+      </div>
+      <div class="card mb-4">
+        <!-- <img src="..." class="card-img-top" alt="..." /> -->
+        <div class="card-body">
+          <h3 class="card-title">Authentication</h3>
+          <p class="card-text">http://localhost:3000/authentication/</p>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">POST login</div>
+                <ul>
+                  <li>BODY: email, password Required</li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">POST logout</div>
+                <ul>
+                  <li>Nothig</li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">POST register</div>
+                <ul>
+                  <li>BODY: email, password Required</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+          <!-- <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in to additional content. This content is
+            a little bit longer.
+          </p> -->
+          <p class="card-text"><small class="text-body-secondary">Last updated 7/13/23</small></p>
+        </div>
+      </div>
+    </main>
+
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+</html>
