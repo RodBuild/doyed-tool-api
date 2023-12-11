@@ -6,7 +6,7 @@ const productsSchema = new mongoose.Schema(
       type: String,
       required: [true, 'field is required'],
       minlength: [8, 'field min length is 8'],
-      maxlength: [30, 'field max length is 20']
+      maxlength: [30, 'field max length is 30']
     },
     picture: String,
     type: {

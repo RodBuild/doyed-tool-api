@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
 const router = require('express').Router()
 const products = require('./products.js')
+const quote = require('./quote.js')
+const information = require('./information.js')
 const authentication = require('./authentication.js')
 const users = require('./users.js')
 
@@ -12,6 +14,8 @@ router.use('/health-check', (req, res) => {
   res.send({ mongoose: mongoose.STATES[mongoose.connection.readyState] })
 })
 router.use('/products', products)
+router.use('/information', information)
+router.use('/quote', quote)
 router.use('/authentication/', authentication)
 router.use('/user/', users)
 
